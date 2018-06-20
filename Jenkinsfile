@@ -9,5 +9,10 @@ pipeline {
         sh 'echo Thanks'
  	}
       }
+     stage('run') {
+	steps {
+        sh 'java -jar rectangle.jar 12 17'
+        }
+     }
    }
 }
